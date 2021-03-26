@@ -6,7 +6,7 @@
   "author": "AlisonMarques <alison-marques@outlook.com.br>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon src/index.js"
   },
   "dependencies": {
     "bcrypt-nodejs": "^0.0.3",

@@ -1,6 +1,6 @@
-import knex from 'knex';
-import config from '../../knexfile';
+const config = require('../../knexfile');
+const knex = require('knex')(config);
 
-const connection = knex(config.development);
+knex.migrate.latest([config]);
 
-module.exports = connection;
+module.exports = knex;
