@@ -4,7 +4,7 @@ const app = express();
 const connection = require('./database/connection');
 const consign = require('consign');
 
-app.connection = connection;
+app.db = connection;
 consign({ cwd: path.join('./src') })
   .then('./config')
   .then('./Controllers')
