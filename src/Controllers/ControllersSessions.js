@@ -21,10 +21,10 @@ module.exports = (app) => {
 
         const payload = { id: user.id };
 
-        // gerando o token para fazer o login
         res.json({
           name: user.name,
           email: user.email,
+          //gerando o token
           token: jwt.encode(payload, authSecret),
         });
       });

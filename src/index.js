@@ -6,6 +6,7 @@ const consign = require('consign');
 
 app.db = connection;
 consign({ cwd: path.join('./src') })
+  .include('./middleware/passport.js')
   .then('./config')
   .then('./Controllers')
   .then('./routes')
